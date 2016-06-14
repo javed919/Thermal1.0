@@ -54,4 +54,8 @@ public class MainActivity extends AppCompatActivity {
         int duration = Toast.LENGTH_SHORT;
         Toast.makeText(context , message ,duration).show();
     }
+    public void onReset(View v){
+        seek_bar.setProgress(50);
+        seek_bar.refreshDrawableState();
+    }
 }
