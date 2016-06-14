@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Thermal 1.0</string>
     <string name="reset">Reset</string>
+    <string name="seekbar_background">seekbar_background</string>
+    <string name="submit">Submit</string>
+    <string name="i_prefer">I prefer</string>
 </resources>
