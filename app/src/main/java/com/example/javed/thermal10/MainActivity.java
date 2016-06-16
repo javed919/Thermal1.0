@@ -1,6 +1,8 @@
 package com.example.javed.thermal10;
 
+import android.content.ContentProviderOperation;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,11 +14,25 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private static SeekBar seek_bar;
     private static TextView text_view;
+    private static TextView user_id_disp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        user_id_disp = (TextView) findViewById(R.id.textView_UserID) ;
+
+        user_id_disp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Pop.class));
+            }
+        });
+
+        //blind listener
+      //  user_id_disp.setOnTouchListener(this);
+
         seekbbarr();
     }
     public void seekbbarr(){

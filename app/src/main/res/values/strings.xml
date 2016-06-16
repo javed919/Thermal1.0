@@ -4,4 +4,5 @@
     <string name="seekbar_background">seekbar_background</string>
     <string name="submit">Submit</string>
     <string name="i_prefer">I prefer</string>
+    <string name="OK">Change</string>
 </resources>
