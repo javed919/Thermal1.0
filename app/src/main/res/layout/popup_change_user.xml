@@ -9,14 +9,16 @@
         android:id="@+id/btn_cancel_popup"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/editText_UserID"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:hint="User ID" />
@@ -26,7 +28,9 @@
         android:layout_height="wrap_content"
         android:text="OK"
         android:id="@+id/btn_ok_popup"
-        android:layout_alignTop="@+id/btn_cancel_popup"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp" />
 </RelativeLayout>
